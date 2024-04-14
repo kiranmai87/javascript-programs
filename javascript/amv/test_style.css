@@ -1,0 +1,51 @@
+#root{
+    border:solid;
+    border-collapse: collapse;
+}
+#root tr{
+    border:solid;
+}
+#root tr td{
+    border:solid;
+    padding:5px;
+    text-align: center;
+}
+
+img{
+    width:50px;
+    height:50px;
+}
+table{
+    width:100%;
+}
+* table{
+    border:solid;
+    border-collapse: collapse;
+    
+}
+th{
+    border:solid;
+    padding:5px;
+    text-align: center;
+    background-color: beige;
+}
+td{
+    border:solid;
+    padding:5px;
+    text-align: center;
+}
+.input{
+    text-align: center;
+    margin:30px;
+}
+.input input{
+    padding:10px 10px 10px 20px;
+    border-radius: 10px;
+}
+.input button{
+    padding:12px;
+    background-color:olive ;
+    border:none;
+    border-radius: 5px;
+    color:white;
+}

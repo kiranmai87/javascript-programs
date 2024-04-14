@@ -1,0 +1,133 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fetch Data and Display in Table with Search</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="searchInput" placeholder="Search by Name">
+
+<table id="data-table">
+    <thead>
+        <tr>
+            <th>id</th>
+              <th>title</th>
+              <th>price</th>
+              <th>description</th>
+              <th>category</th>
+              <th>image</th>
+              <th>Rating</th>
+              <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody id="root">
+    </tbody>
+</table>
+
+<script>
+    // Function to fetch data from the API
+    function fetchData() {
+        fetch('https://fakestoreapi.com/products')
+        .then(response => response.json())
+        .then(data => {
+            displayData(data);
+        })
+    }
+
+    // Function to display data in the table
+    function displayData(data) {
+        const root=document.getElementById('root')
+    root.innerHTML=data.map((e)=>{
+        return(
+           `<tr>
+           <td>${e.id}</td>
+                <td>${e.title}</td>
+                <td>${e.price}</td>
+                <td>${e.description}</td>
+                <td>${e.category}</td>
+                <td><img src="${e.image}"/></td>
+                <td>${e.rating.count}</td>
+                <td>${e.rating.rate}</td>
+            </tr>`
+            
+        )
+          
+        });
+    }
+
+    // Function to handle search input
+    function handleSearch() {
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput.value.toLowerCase();
+        const tableRows = document.querySelectorAll('#root tr');
+
+        tableRows.forEach(row => {
+            const name = row.querySelector('td:nth-child(2)').textContent.toLowerCase();
+            
+            if (name.includes(searchTerm)) {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+       
+    }
+
+    // Fetch data when the page loads
+    window.onload = () => {
+        fetchData();
+
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', handleSearch);
+    };
+</script>
+
+</body>
+</html> -->
+
+
+
+    
+<script>
+    // Sample dataset
+let data = "This is a sample data string containing words to search through.";
+
+// Function to search for a word in the data
+function searchWord(word) {
+    // Convert data to lowercase for case-insensitive search
+    let lowerCaseData = data.toLowerCase();
+    // Convert word to lowercase for case-insensitive search
+    let lowerCaseWord = word.toLowerCase();
+    // Split data into words
+    let words = lowerCaseData.match(/\b\w+\b/g);
+    
+    // Check if the word exists in the dataset
+    if (words.includes(lowerCaseWord)) {
+        console.log(`Found '${word}' in the dataset.`);
+    } else {
+        console.log(`Did not find '${word}' in the dataset.`);
+    }
+}
+
+// Example usage
+searchWord("contain"); // Output: Found 'sample' in the dataset.
+searchWord("JavaScript"); // Output: Did not find 'JavaScript' in the dataset.
+</script>
+
+

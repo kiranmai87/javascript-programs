@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>table api</title>
+    <link rel="stylesheet" href="table_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>userid</th>
+                <th>id</th>
+                <th>title</th>
+                <th>description</th>
+            </tr>
+        </thead>
+        <tbody id="root">
+            
+        </tbody>
+    </table> -->
+    <div class="header">
+      <div class="inputText">
+        <input type="text" placeholder="Search" id="inputsearch">
+        <div id="error"></div>
+      </div>
+        
+        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+    </div>
+    <table id="brd">
+      <thead>
+          <tr>
+              <th>S.No</th>
+              <th>title</th>
+              <th>price</th>
+              <th>description</th>
+              <th>category</th>
+              <th>image</th>
+              <th>Rating</th>
+              <th>Rating</th>
+  
+          </tr>
+      </thead>
+      <tbody id="root">
+  
+      </tbody>
+  </table>
+ 
+  
+    <script src="table_script.js"></script>
+  </body>
+</html>

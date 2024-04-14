@@ -1,0 +1,92 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:40px 100px;
+background-color: aquamarine;
+}
+header img{
+    width:30px;
+    cursor:pointer
+}
+header span{
+    position: absolute;
+    top:30px;
+    font-size: 20px;
+}
+.container{
+    width:100%;
+    display:flex;
+   background-color: aliceblue;
+}
+#content{
+    width:100%;
+    background-color: aliceblue;
+    display:flex;
+    flex-wrap: wrap;
+    gap:50px;
+    height: fit-content;
+    padding:30px;
+  
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+
+}
+.card img{
+    width:200px;
+    height: 200px;
+    object-fit: contain;
+}
+.side-bar{
+    background-color: blanchedalmond;
+    width:100% !important;
+ padding:30px;
+ height: 100vh;
+  visibility: hidden;
+}
+.show{
+    visibility: visible;
+    width:30%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.side-bar h1{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 35px;
+}
+#cart-items{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#cart-items img{
+    width:50px;
+    height: 50px;
+    object-fit: contain;
+}
+#cart{
+    text-align: center;  
+}
+h3{
+    font-size: 22px;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main">
+        <div class="header">      
+            <button class="login-btn" onclick="login_form()">Login</button>
+            <button class="signup-btn" onclick="signup_form()">Sign Up</button>
+        </div>
+        <div class="title">
+            
+            <h1>zomato</h1>
+            <p>Find the best restaurants, cafés and bars in India</p>
+        </div>
+    </div>
+    <div class="overlay">
+        <div class="popup"id="display"  >
+            <div class="login">
+                <div class="login-title">
+                    <p>Login</p>
+                    <button class="btn1" onclick="close_form()"><img src="https://t4.ftcdn.net/jpg/00/75/69/13/360_F_75691329_CLLuXHPb6zqvgBnFkQjVnufsLEtmbL3e.jpg" alt="" width="20"></button>
+                </div>
+                <input type="text" name="" id="" placeholder="Phone">
+                <button class="btn2" onclick="close_form()">Send One Time Password</button>
+            </div>  
+    </div>
+    <div class="signup-overlay">
+        <div class="signup-popup" id="signup_display"  >     
+            <div class="login">
+                <div class="login-title">
+                    <p>Signup</p>
+                    <button class="btn1" onclick="close_form()"><img src="https://t4.ftcdn.net/jpg/00/75/69/13/360_F_75691329_CLLuXHPb6zqvgBnFkQjVnufsLEtmbL3e.jpg" alt="" width="20"></button>
+                </div>           
+                <input type="text" name="" id="" placeholder="Phone">
+                <input type="text" name="" id="" placeholder="email">
+                <button class="btn2" onclick="close_form()">Send One Time Password</button>
+            </div>  
+    </div>    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

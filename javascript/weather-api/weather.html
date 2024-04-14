@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>weatherapi</title>
+    <link rel="stylesheet" href="weather_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <h1 style="text-align: center;">Weather</h1>
+        <div class="header">
+          <div class="inputText">
+            <input type="text" placeholder="Enter city" id="inputcity">
+            <div class="error"></div>
+          </div>
+            
+            <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+        </div>
+        <div class="show">
+          <div class="main" id="displayContent">
+            
+            <div class="dayTime">
+              <h3 id="day"></h3>
+              <h4 id="time"></h4>
+            </div>
+            <div class="row1">
+              <div id="lat"></div>
+              <div class="weather">
+                <img src="images/sun.png" id="weatherImg"/>
+                <p id="weather"></p>
+                <h2 id="city"></h2>
+                <h3 id="temp"></h3>
+              </div>
+              <div id="lon"></div>
+              
+            </div>
+            <div class="row2">
+              <div class="col1">
+                <img src="images/humidity.png"/>
+                <h2>Humidity</h2>
+                <h3 id="humidity"></h3>
+              </div>
+              <div class="col2">
+                <img src="images/wind-power.png"/>
+                <h2>Wind Speed</h2>
+                <h3 id="wind"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       
+  
+    <script src="weather_script.js"></script>
+  </body>
+</html>

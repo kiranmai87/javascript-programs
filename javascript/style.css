@@ -1,0 +1,173 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background: url('images/evgeni-tcherkasski-ras1xi1TGUU-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.main{
+position: relative;
+background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png');
+height:580px;
+}
+.main img{
+    object-fit: cover;
+}
+.header{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    padding-right: 350px;
+    padding-top: 40px;
+}
+
+.login-btn,.signup-btn{ 
+    font-size: 27px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+h1{
+    font-size: 100px;
+    font-style: italic;
+    color: white;
+}
+.title p{
+    font-size: 46px;
+    color: white;
+    width:642px;
+    text-align: center;
+}
+.popup,.signup-popup{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.overlay,.signup-overlay{
+    visibility: visible;
+}
+.login-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login{
+    width:300px;
+    height:300px;
+    background-color: white;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    position: absolute;
+    padding:30px
+}
+.btn1{
+    border: none;
+    cursor:pointer
+}
+.btn2{
+    background-color:crimson;
+    padding:10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    padding:10px;
+} */
+
+
+/* qr generator
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    width:300px;
+    height:300px;
+    background-color: antiquewhite;
+    padding:30px;
+} */
+
+h1{
+    color:white
+}
+
+.main{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+#form{
+    width:400px;
+    height:400px;
+    background: rgba(231, 270, 231, .5);
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
+.form-inputs{
+    width:300px;
+    display:flex;
+    justify-content: space-between;
+}
+.input-align{
+  position: relative;
+    
+}
+input{
+    padding:5px 10px 
+}
+button{
+    padding:10px;
+    background-color: coral;
+    border-radius: 10px;
+    color:azure;
+    border: 0;
+    cursor: pointer;
+}
+.fa-solid{
+    color:grey
+}
+#eye {
+    position: absolute;
+    /* bottom: 326px; */
+    top: 7px;
+    right: 6px;
+    cursor: pointer;
+    width: 20px;
+
+}
+
+.error{
+    color:red;
+    font-size: 12px;
+}

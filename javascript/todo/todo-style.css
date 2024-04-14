@@ -1,0 +1,23 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+i{cursor: pointer;
+float: right;}
+header{
+    display:flex;
+}
+ul{
+    padding-left:12px;
+    list-style-type:decimal;
+}
+ul li{
+ padding:5px;
+ font-size: 18px;
+ /* display: flex;
+ justify-content: space-between; */
+
+}
